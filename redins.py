@@ -6,13 +6,13 @@ import random as __random
 import time as __time
 import twitter
 
-user = "Shardul Semwal" ##Enter Instagram username
-passw = "Seemsemwal@5" ##Add Instagram password
+user = "" ##Enter Instagram username
+passw = "" ##Add Instagram password
 
-consumer_key="LJ4OHJKaygrUB0K50Aj924qOK" ##Add twitter consumer key
-consumer_secret="rquQOsJ0s3onXL2vblQqPMg1SaEdQ8DOtIJDaEm6qqZtm9hYvB" ##Add twitter consumer secret key
-access_token_key="1206637129737981953-oDhaVnaQCgRVwOq7wP9kvlMnee6oxN"#Add twitter 
-access_token_secret="vGnYwNVrT6Lazr77fXLKG9tpYMy2LEZixv8DxgHkcDLQb "##Add twitter
+consumer_key="" ##Add twitter consumer key
+consumer_secret="" ##Add twitter consumer secret key
+access_token_key=""#Add twitter 
+access_token_secret=""##Add twitter
 
 
 ##Edit captions named cap1, cap2, cap3 for Instagram
@@ -160,14 +160,14 @@ def uload(num):
             files = __random.choice(dirs)
             files = f'{__os.getcwd()}\\red_media\\' + files
 	    print("1:post to instagram 2:post to twitter 3:post on both sites")
-	    b=int(input("enter index where to post images"))
-	    if(b==1):
+	    x=int(input("enter index where to post images"))
+	    if(x==1):
 	    	i.uploadPhoto(files, caption=__random.choice(cap))
             	print("insta upload")
-	    elif(b==2):
+	    elif(x==2):
             	a.PostUpdate(__random.choice(caps), files)
             	print("Uploaded..")
-	    elif(b==3):
+	    elif(x==3):
 	    	i.uploadPhoto(files, caption=__random.choice(cap))
             	print("insta upload")
 	    	a.PostUpdate(__random.choice(caps), files)
